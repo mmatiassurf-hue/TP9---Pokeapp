@@ -1,0 +1,185 @@
+/* ---------- GENERAL ---------- */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+main {
+  padding: 20px;
+}
+
+button {
+  background: #ffcb05;
+  border: 2px solid #2a75bb;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 4px;
+}
+
+button:hover {
+  background: #ffd84d;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background: #e3350d;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#usuario-actual {
+  font-weight: bold;
+  width: 100%;
+  text-align: right;
+}
+
+/* ---------- INICIO ---------- */
+
+.inicio {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.inicio img {
+  width: 150px;
+}
+
+/* ---------- POKÉDEX ---------- */
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+}
+
+.tarjeta img {
+  width: 96px;
+}
+
+.tarjeta p {
+  margin: 4px 0;
+}
+
+.numero {
+  color: #888;
+}
+
+.rareza {
+  font-style: italic;
+}
+
+/* ---------- DETALLE ---------- */
+
+.detalle {
+  background: white;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.detalle-imagenes img {
+  width: 140px;
+}
+
+.detalle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detalle li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ---------- FORMULARIOS ---------- */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  gap: 4px;
+}
+
+.formulario label.check {
+  flex-direction: row;
+  align-items: center;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#mensaje {
+  color: #e3350d;
+}
+
+/* ---------- BATALLA ---------- */
+
+.batalla {
+  background: white;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.combatientes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.combatientes img {
+  width: 120px;
+}
